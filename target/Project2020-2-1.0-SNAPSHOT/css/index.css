@@ -1,0 +1,80 @@
+@import './setting.css';
+
+html body {background-color: #F7F9FA;}
+
+.wrap {
+    width: 600px;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -40%);
+}
+
+.wrap .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h1 {
+    margin: 35px;
+    color:  rgb(3, 199, 90);
+    text-align: center;
+    font-size: 50px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container form .user_id,
+.container form .user_pw,
+.container form .signIn_btn {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+
+}
+
+.container form .user_id,
+.container form .user_pw {
+    padding: 0;
+    border: 1px solid rgb(190, 190, 190);
+    font-size: 25px;
+}
+
+.container form .signIn_btn {
+    padding: 0;
+    border: none;
+    background-color: rgb(3, 199, 90);
+    color: white;
+    font-size: 18px;
+}
+
+.container form .keep {
+    margin-bottom: 20px;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container ul li {
+    flex-grow: 1;
+}
+
+.container ul li:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.container ul li:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+}
